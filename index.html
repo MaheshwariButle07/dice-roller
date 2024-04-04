@@ -59,7 +59,7 @@
 
         <img id="dice-img" class="dice" src="./images/dice-1.png" alt="dice-img">
 
-        <button id="roller-btn" class="btn" onclick="rollDice">Roll</button>
+        <button id="roller-btn" class="btn" onclick="rollDice()">Roll</button>
 
     </div>
 
@@ -71,28 +71,34 @@
             const min = 1;
             const max = 6;
 
-            const randomNumber = Math.round((Math.random() * (max - min))) + min;
+            const randomNumber = Math.round(Math.random() * (max - min)) + min;
 
             const imgElement = document.getElementById('dice-img');
 
             switch (randomNumber) {
                 case 1:
                     imgElement.src = './images/dice-1.png';
+                    break;
 
                 case 2:
                     imgElement.src = './images/dice-2.png';
+                    break;
 
                 case 3:
                     imgElement.src = './images/dice-3.png';
+                    break;
 
                 case 4:
                     imgElement.src = './images/dice-4.png';
+                    break;
 
                 case 5:
                     imgElement.src = './images/dice-5.png';
+                    break;
 
                 case 6:
                     imgElement.src = './images/dice-6.png';
+                    break;
 
             }
         }
